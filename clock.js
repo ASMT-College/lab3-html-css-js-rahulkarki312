@@ -1,4 +1,4 @@
-
+// clock.js
 function showDateAndTime(){
     document.getElementById('show_date_and_time').innerHTML = Date();
 }
