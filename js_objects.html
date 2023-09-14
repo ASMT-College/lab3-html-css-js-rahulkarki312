@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+         function showDetails(){
+                document.write(this.name+ " is "+ this.age + " years old.</br>");
+            }
+
+        // Create direct instance of object
+        var ram = {name:"Ram", age:25, address: "Sitapaila", showName: showDetails};
+        
+
+        // create an object constructor
+        function Person(name, age, address){
+            this.name = name;
+            this.age = age;
+            this.address = address;
+            this.showName = showDetails;
+            
+        }
+       
+        
+        var Sanis = new Person("sanis",20, "Thamel" );
+        ram.showName();
+        Sanis.showName();
+
+        // Circle class
+        function areaCircle(){
+            document.write("Area of Circle: " + Math.PI * Math.pow(this.radius, 2)+" </br>");
+        }
+
+        // Using direct instance of object
+        var Circle1 = {radius: 12, area: areaCircle};
+        Circle1.area();
+
+        // Using object constructor
+
+        function Circle(radius){
+            this.radius = radius;
+            this.area = areaCircle;
+        }
+        Circle2 = new Circle(13);
+        Circle2.area();
+
+        
+    </script>
+</body>
+</html>

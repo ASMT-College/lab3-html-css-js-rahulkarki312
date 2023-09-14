@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var table = document.createElement("table");
+
+        var headerRow = document.createElement("tr");
+        var nameHeader = document.createElement("th");
+        nameHeader.textContent = "Name";
+        var ageHeader = document.createElement("th");
+        ageHeader.textContent = "Age";
+        var emailHeader = document.createElement("th");
+        emailHeader.textContent = "Email";
+
+        headerRow.appendChild(nameHeader);
+        headerRow.appendChild(ageHeader);
+        headerRow.appendChild(emailHeader);
+
+        table.appendChild(headerRow);
+
+        var dataRow = document.createElement("tr");
+
+        var nameCell = document.createElement("td");
+        nameCell.textContent = "jhon";
+        var ageCell = document.createElement("td");
+        ageCell.textContent = "20";
+        var emailCell = document.createElement("td");
+        emailCell.textContent = "jhon@gmail.com";
+
+        dataRow.appendChild(nameCell);
+        dataRow.appendChild(ageCell);
+        dataRow.appendChild(emailCell);
+
+        table.appendChild(dataRow);
+
+        document.body.appendChild(table);
+    </script>
+
+</body>
+
+</html>

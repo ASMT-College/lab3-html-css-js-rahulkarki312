@@ -1,0 +1,45 @@
+<!-- Give example of XML and JSON for employees having firstname, lastname and age -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "jquery.slim.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+            // $('#myDiv').click(function(){
+            //     alert("This is an event from jQuery");
+            // });
+
+            $('#myDiv').on('click', function(){
+                alert("This is an event from jQuery");
+            });
+            $('#myDiv').on('mouseenter', function(){
+                $('body').css('background-color', 'blue');
+            });
+            $('#myDiv').on('mouseleave', function(){
+                $('body').css('background-color', 'white');
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div id="myDiv">
+        Hello myDiv
+    </div>
+    <div onclick="$('#myDiv').show()">Show</div>
+    <div onclick="hideDiv()">Hide</div>
+    <script>
+        
+        function hideDiv(){
+            $('#myDiv').hide();
+        }
+
+        // jquery has selector and action
+        // $('#myDiv').hide();
+    </script>
+</body>
+</html>
