@@ -1,0 +1,24 @@
+<!-- Give example of XML and JSON for employees having firstname, lastname and age -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<employees>
+  <employee>
+    <firstname>John</firstname>
+    <lastname>Smith</lastname>
+    <age>28</age>
+  </employee>
+  <employee>
+    <firstname>Bob</firstname>
+    <lastname>Jones</lastname>
+    <age>35</age>
+  </employee>
+  <employee>
+    <firstname>Charlie</firstname>
+    <lastname>Johnson</lastname>
+    <age>42</age>
+  </employee>
+</employees>
+
+
+
